@@ -17,6 +17,13 @@ const Sidebar = () => {
     <div className='sticky top-0'>
       <div className='border-b-4  border-b-violet-600 py-2  bg-black'>
       <div className='flex justify-between items-center px-10 lg:px-24 max-w-full mx-auto my-2'>
+      <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      >
+         <h1 className='text-white font-Mont text-md'>Akbar Hospital Management System</h1>
+      </motion.div>
       <motion.div className='flex justify-center items-center text-center mb-1 capitalize text-[1.1rem] font-semibold'
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}

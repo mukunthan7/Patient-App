@@ -5,6 +5,8 @@ import PatientHistory from "./pages/PatientHistory"
 import OutPatientEntry from "./pages/OutPatientEntry"
 import PatientLogin from "./pages/patientLogin";
 import PatientRegister from "./pages/patientRegister";
+import BookAppoinment from "./pages/BookAppointments";
+import Notifications from "./pages/Notifications";
 import NotFound from "./pages/NotFound";
 import AdminLogin from "./pages/AdminLogin";
 import Home from "./pages/Home";
@@ -65,7 +67,12 @@ export default createBrowserRouter([
             element: <PatientHome />
         },
         {
-            
+            path: "/patient/book-appointment",
+            element: <BookAppoinment />
+        },
+        {
+           path: "/patient/notification",
+           element: <Notifications />
         }
     ]
   },

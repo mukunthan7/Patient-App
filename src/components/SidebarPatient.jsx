@@ -16,6 +16,13 @@ const SidebarPatient = () => {
     <div className='sticky top-0'>
       <div className='border-b-4  border-b-violet-600 py-2  bg-black'>
       <div className='flex justify-between items-center px-10 lg:px-24 max-w-full mx-auto my-2'>
+      <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      >
+         <h1 className='text-white font-Mont text-md'>Akbar Hospital Management System</h1>
+      </motion.div>
       <motion.div className='flex justify-center items-center text-center mb-1 capitalize text-[1.1rem] font-semibold'
       initial={{ opacity: 0, scale: 0 }}
       whileInView={{ opacity: 1, scale: 1 }}
@@ -53,10 +60,10 @@ const SidebarPatient = () => {
             transition={{ duration: 0.5 }}
             className='flex flex-col justify-center items-center text-center bg-violet-400 w-full h-screen absolute top-0 bottom-0 left-0 right-0 -z-10 space-y-10'
             >
-              <Link to="/">
+              <Link to="/patient/book-appointment">
               <button onClick={Menu} className='flex items-center text-2xl text-white py-5 hover:text-black max-w-lg mx-auto'><TbListDetails /><span className='pl-2'>Book Appointments</span></button>
               </Link>
-              <Link to="/">
+              <Link to="/patient/notification">
               <button onClick={Menu} className='flex items-center text-2xl text-white py-5 hover:text-black max-w-lg mx-auto'><TbHistory /><span className='pl-2'>Notifications</span></button>
               </Link>
               <button onClick={Menu} className='flex items-center text-2xl text-white py-5 hover:text-black max-w-lg mx-auto'><HiLogout /><span className='pl-2'>Logout</span></button>
