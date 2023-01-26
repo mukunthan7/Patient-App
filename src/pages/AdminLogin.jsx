@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaUserMd } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const AdminLogin = () => {
   return (
@@ -19,7 +20,9 @@ const AdminLogin = () => {
         <input className='bg-gray-100 rounded-md px-1 py-1 w-full border md:max-w-xs mb-2' type="password" name="password" />
       </label>
       </div>
-      <button className='rounded-lg text-white px-16 py-3 text-sm bg-violet-700 mb-8' type="submit">Login</button>
+      <Link to='/admin'>
+          <button className='rounded-lg text-white px-16 py-3 text-sm bg-violet-700 mb-8' type="submit">Login</button>
+      </Link>
     </form>
     </div>
   </div>

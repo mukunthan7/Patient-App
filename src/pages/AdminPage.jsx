@@ -1,5 +1,4 @@
 import {useEffect, useState} from 'react'
-import Sidebar from '../components/Sidebar';
 
 const Admin = () => {
 
@@ -17,7 +16,6 @@ const Admin = () => {
   
   return (
     <div className='min-h-screen bg-pink-200 items-center'>
-      <Sidebar />
         <div>
         {data.map((data) => (
           <div className='flex flex-col justify-center items-center' key={data.id.value}>

@@ -14,7 +14,7 @@ const SidebarPatient = () => {
 
   return (
     <div className='sticky top-0'>
-      <div className='border-b-4  border-b-violet-600 py-2  bg-black mb-20'>
+      <div className='border-b-4  border-b-violet-600 py-2  bg-black'>
       <div className='flex justify-between items-center px-10 lg:px-24 max-w-full mx-auto my-2'>
       <motion.div className='flex justify-center items-center text-center mb-1 capitalize text-[1.1rem] font-semibold'
       initial={{ opacity: 0, scale: 0 }}

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaUserAlt } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const patientLogin = () => {
   return (
@@ -19,7 +20,9 @@ const patientLogin = () => {
           <input className='bg-gray-100 rounded-md px-1 py-1 w-full border md:max-w-xs mb-2' type="password" name="password" />
         </label>
         </div>
-        <button className='rounded-lg text-white px-16 py-3 text-sm bg-black mb-8' type="submit">Login</button>
+        <Link to='/patient'>
+          <button className='rounded-lg text-white px-16 py-3 text-sm bg-black mb-8' type="submit">Login</button>
+        </Link>
       </form>
       </div>
     </div>
